@@ -14,7 +14,7 @@ typedef struct {
 int main() {
   Estado estado [NUM_ESTADOS];
 
-  for (int = 1; i < NUM_ESTADOS; i++) {
+  for (int = 0; i < NUM_ESTADOS; i++) {
 
   // Variável Estado
   printf("Estado: ");
