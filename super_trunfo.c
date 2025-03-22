@@ -4,7 +4,7 @@
 typedef struct {
   char letraEstado[2];
   char codigo[4];
-  char nomeCidade[30];
+  char cidade[30];
   int populacao;
   float area;
   float pib;
@@ -12,33 +12,33 @@ typedef struct {
 } Estado;
   
 int main() {
-  Estado estado [NUM_ESTADOS];
+  Estado estado[NUM_ESTADOS];
 
-  for (int = 0; i < NUM_ESTADOS; i++) {
+  for (int i = 0; i < NUM_ESTADOS; i++) {
 
   // Variável Estado
   printf("Estado: ");
-  scanf("%2s", estados[i].letraEstado);
+  scanf("%2s", estado[i].letraEstado);
 
   // Variável Código da Carta
   printf("Código: ");
-  scanf("%2s", estados[i].codigo);
+  scanf("%2s", estado[i].codigo);
 
   // Variável Nome da Cidade
   printf("Nome da Cidade: ");
-  scanf("%[^\n]s", estados[i].nomeCidade);
+  scanf("%[^\n]s", estado[i].cidade);
 
   // Variável População
   printf("População: ");
-  scanf("%d", &estados[i].populacao);
+  scanf("%d", &estado[i].populacao);
 
   // Variável Área
   printf("Área: ");
-  scanf("%f", &estados[i].area);
+  scanf("%f", &estado[i].area);
 
   // Variável PIB
   printf("PIB: ");
-  scanf("%f", &estados[i].pib);
+  scanf("%f", &estado[i].pib);
 
   printf("\n");
   }
@@ -46,13 +46,13 @@ int main() {
   // Exibir as cartas
   for (int i = 0; i < NUM_ESTADOS; i++) {
     printf("Carta %02d:\n", i + 1);
-    printf("Estado: %s\n", estados[i].letraEstado);
-    printf("Código: %s\n", estados[i].codigo);
-    printf("Cidade: %s\n", estados[i].cidade);
-    printf("População: %d\n", estados[i].populacao);
-    printf("Área: %.2f km²\n", estados[i].area);
-    printf("PIB: %.2f bilhões\n", estados[i].pib);
-    printf("Número de Pontos Turísticos: %d\n\n", estados[i].pontosTuristicos);
+    printf("Estado: %s\n", estado[i].letraEstado);
+    printf("Código: %s\n", estado[i].codigo);
+    printf("Cidade: %s\n", estado[i].cidade);
+    printf("População: %d\n", estado[i].populacao);
+    printf("Área: %.2f km²\n", estado[i].area);
+    printf("PIB: %.2f bilhões\n", estado[i].pib);
+    printf("Número de Pontos Turísticos: %d\n\n", estado[i].pontosTuristicos);
   }
     return 0;
 }
