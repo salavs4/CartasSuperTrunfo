@@ -1,3 +1,4 @@
+#include <stdio.h>
 #define NUM_ESTADOS 2
 // Estrutura para organizar as características das cartas para o jogo Super Trunfo
 typedef struct {
