@@ -2,7 +2,7 @@
 #define NUM_ESTADOS 2
 // Estrutura para organizar as características das cartas para o jogo Super Trunfo
 typedef struct {
-  char letraEstado[2];
+  char letraEstado[3];
   char codigo[4];
   char cidade[30];
   int populacao;
@@ -16,32 +16,38 @@ int main() {
 
   for (int i = 0; i < NUM_ESTADOS; i++) {
 
-  // Variável Estado
-  printf("Estado: ");
-  scanf("%2s", estado[i].letraEstado);
-
-  // Variável Código da Carta
-  printf("Código: ");
-  scanf("%2s", estado[i].codigo);
-
-  // Variável Nome da Cidade
-  printf("Nome da Cidade: ");
-  scanf("%[^\n]s", estado[i].cidade);
-
-  // Variável População
-  printf("População: ");
-  scanf("%d", &estado[i].populacao);
-
-  // Variável Área
-  printf("Área: ");
-  scanf("%f", &estado[i].area);
-
-  // Variável PIB
-  printf("PIB: ");
-  scanf("%f", &estado[i].pib);
-
-  printf("\n");
-  }
+    // Variável Estado
+    printf("Estado: ");
+    scanf("%2s", estado[i].letraEstado);
+    getchar();
+  
+    // Variável Código da Carta
+    printf("Código: ");
+    scanf("%3s", estado[i].codigo);
+    getchar();
+  
+    // Variável Nome da Cidade
+    printf("Nome da Cidade: ");
+    scanf(" %[^\n]", estado[i].cidade);
+  
+    // Variável População
+    printf("População: ");
+    scanf("%d", &estado[i].populacao);
+  
+    // Variável Área
+    printf("Área: ");
+    scanf("%f", &estado[i].area);
+  
+    // Variável PIB
+    printf("PIB: ");
+    scanf("%f", &estado[i].pib);
+  
+    // Variável Pontos Turísticos
+    printf("Número de Pontos Turísticos: ");
+    scanf("%d", &estado[i].pontosTuristicos);
+  
+    printf("\n");
+    }
 
   // Exibir as cartas
   for (int i = 0; i < NUM_ESTADOS; i++) {
@@ -56,5 +62,6 @@ int main() {
   }
     return 0;
 }
+
 
 
